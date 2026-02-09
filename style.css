@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: cursive;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.active { display: block; }
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+  background: hotpink;
+  color: white;
+  font-size: 16px;
+}
+
+.envelope-box {
+  position: relative;
+}
+
+.bouquet {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+#bouquetText {
+  display: none;
+  margin-top: 250px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: white;
+  padding: 20px;
+  overflow: auto;
+}
+
+.envelope-text {
+  position: relative;
+}
+
+.envelope-text p {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  font-size: 14px;
+}

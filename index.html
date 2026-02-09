@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1" style="background-image:url('photos/bg-hearts.png')">
+  <h1>Hey Hubby 💕</h1>
+  <h2>Will you be my Valentine?</h2>
+  <button onclick="goToPage(2)">YES ❤️</button>
+  <button onclick="askSure()">NO 💔</button>
+  <p id="sureText"></p>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2" style="background-image:url('photos/bg-kiss.png')">
+  <h1>HAPPY VALENTINE'S DAY KUKU ❤️</h1>
+  <p>
+    You are the only person in my life<br>
+    whom I love soo much 💖<br><br>
+    I LOVE YOU SOOOOOOO MUCH
+  </p>
+  <button onclick="goToPage(3)">Click Here 💋</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3" style="background-image:url('photos/bg-sparkle.png')">
+  <div class="envelope-box">
+    <img src="photos/envelope_boquet.png" class="envelope">
+    <img src="photos/bouquet.png" class="bouquet" id="bouquet">
+  </div>
+  <button onclick="openBouquet()">Press 🌸</button>
+
+  <p id="bouquetText">
+    khate hai sunflower sun ki presence me sun ko dekhte hai aur dark me
+    ik dusre ki taraf waise hi ham dono v hare har dark moment me
+    ke dusre ke sath rahe ge aur ik dusri ki support bane ge 💛<br><br>
+    Abhi real me flower nhi de sakti toh online hi sahi 🌹🌻
+  </p>
+
+  <button onclick="goToPage(4)">Click Here 🎁</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4" style="background-image:url('photos/bg-sparkle.png')">
+  <h2>For You ❤️</h2>
+  <div class="gifts">
+    <img src="photos/gift.png" onclick="openGift(1)">
+    <img src="photos/gift.png" onclick="openGift(2)">
+    <img src="photos/gift.png" onclick="openGift(3)">
+  </div>
+
+  <!-- GIFT 1 -->
+  <div class="popup" id="gift1">
+    <img id="slider" src="photos/photo1.jpg">
+    <audio id="song" controls></audio>
+    <button id="nextBtn" onclick="nextPhoto()">Next ➡️</button>
+    <button id="endBtn" onclick="closeGift()">End ❤️</button>
+  </div>
+
+  <!-- GIFT 2 -->
+  <div class="popup" id="gift2">
+    <div class="envelope-text">
+      <img src="photos/envelope_message.png">
+      <p>
+        Thank you soo much meri life me ane ke liye ❤️<br><br>
+        I love you sooo much mera bacha.
+        I am nothing without you, you are my home,
+        my safe place, my everything.<br><br>
+        Mujhe pata hai me aapko bhut zyada preshan krti hu,
+        irritate krti hu, gussa krti hu, danti bhi hu,
+        par inn sab se zyada aapko pyar krti hu 🥺❤️<br><br>
+        Ladeee me aapke bina nahi reh sakti kutteee.
+        Please mujhe kabhi chhod ke mat jana.
+        Main aapke sath hamesha aise hi rehna chahti hu
+        aur aapko aise hi preshan karna chahti hu
+        (kyunki aapko preshan karne me mujhe maza aata hai 😁👉🏻👈🏻)<br><br>
+        I LOBE YOU SUNDER ❤️
+      </p>
+    </div>
+    <button onclick="closeGift()">Back</button>
+  </div>
+
+  <!-- GIFT 3 -->
+  <div class="popup" id="gift3" style="background-image:url('photos/vintage-paper.png')">
+    <p>
+    tu hai toh lagta hai 
+    Tu hai toh lagta hai 
+    Ki Hai koi ... 
+   Jo mujhe chah sakega 
+   Hn hoon me alhad thodi
+   Haan hoon ziddi
+  Tere hone hone se hai koi
+  Jo mujhe mana sakega
+  Teri aadato me meri kinhi harkato ne 
+  Ghr dhundha hai
+  Tere na hone se lut jayege 
+  Chhatee kahin...
+  Sapno ka hai Ghar mera
+  Sab khatee hai issa ghr sapno me hi hota hai 
+  Tere hone se lagta hai 
+  Wo ghr mera tuu mere sath basega
+  Tu hai toh lagta hai 
+  Ki Hai koi
+  Jo mujhe chah sakega 
+  Mee hoon mohabbat ke layak bohot 
+  Yeah mujhe bata sakega
+  Meri pagalpan ko sah sakega 
+  Aur mujhe bephan mohabbat kr sake ga...<br><br>❤️
+    </p>
+    <button onclick="closeGift()">End ❤️</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
